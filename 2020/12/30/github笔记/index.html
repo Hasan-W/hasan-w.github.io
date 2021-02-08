@@ -7,12 +7,12 @@
 
 
 
-    <meta name="description" content="如何将一个本地项目推到github上 github配置推送初始化本地仓库1git init 添加所有文件该命令效果等同于 git add -A 1git add .">
+    <meta name="description" content="博主笔记，需要密码才能继续阅读.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github笔记">
 <meta property="og:url" content="https://hasan-w.github.io/2020/12/30/github%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="rootfw">
-<meta property="og:description" content="如何将一个本地项目推到github上 github配置推送初始化本地仓库1git init 添加所有文件该命令效果等同于 git add -A 1git add .">
+<meta property="og:description" content="博主笔记，需要密码才能继续阅读.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/ComeBey/imghosting/comebey-pic/hjkl.svg">
 <meta property="article:published_time" content="2020-12-30T09:36:11.000Z">
@@ -243,33 +243,18 @@ var _hmt = _hmt || [];
             
         </h1>
         <div class="content">
-            <html><head></head><body><p><strong>如何将一个本地项目推到github上</strong></p>
-<h2 id="github配置推送"><a href="#github配置推送" class="headerlink" title="github配置推送"></a>github配置推送</h2><h3 id="初始化本地仓库"><a href="#初始化本地仓库" class="headerlink" title="初始化本地仓库"></a>初始化本地仓库</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="添加所有文件"><a href="#添加所有文件" class="headerlink" title="添加所有文件"></a>添加所有文件</h3><p>该命令效果等同于 <code>git add -A</code></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></tbody></table></figure>
-<a id="more"></a>
-<h3 id="git-commit-m-‘提交说明’-git-commit-m-quot-提交说明-quot-或者git-commit-m-39-提交说明2-39-将修改后的文件提交到本地仓库，如：git-commit-m-‘项目创建’"><a href="#git-commit-m-‘提交说明’-git-commit-m-quot-提交说明-quot-或者git-commit-m-39-提交说明2-39-将修改后的文件提交到本地仓库，如：git-commit-m-‘项目创建’" class="headerlink" title="git commit -m ‘提交说明’ (git commit -m "提交说明"或者git commit -m'提交说明2') 将修改后的文件提交到本地仓库，如：git commit -m ‘项目创建’"></a>git commit -m ‘提交说明’ (<code>git commit -m "提交说明"</code>或者<code>git commit -m'提交说明2'</code>) 将修改后的文件提交到本地仓库，如：git commit -m ‘项目创建’</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git commit -m "update new json"</span><br><span class="line">git commit -m'update new json' #选一种方法</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="连接到远程仓库"><a href="#连接到远程仓库" class="headerlink" title="连接到远程仓库"></a>连接到远程仓库</h3><p>连接到远程仓库，并将代码同步到远程仓库</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/ComeBey/v2rayconfig.git</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="把本地仓库的变化连接到远程仓库主分支"><a href="#把本地仓库的变化连接到远程仓库主分支" class="headerlink" title="把本地仓库的变化连接到远程仓库主分支"></a>把本地仓库的变化连接到远程仓库主分支</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="创建一个-upStream-（上传流），并将本地代码通过这个-upStream-推送到-别名为-origin-的仓库中的-master-分支上"><a href="#创建一个-upStream-（上传流），并将本地代码通过这个-upStream-推送到-别名为-origin-的仓库中的-master-分支上" class="headerlink" title="创建一个 upStream （上传流），并将本地代码通过这个 upStream 推送到 别名为 origin 的仓库中的 master 分支上"></a>创建一个 upStream （上传流），并将本地代码通过这个 upStream 推送到 别名为 origin 的仓库中的 master 分支上</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></tbody></table></figure>
-<p>-u ，就是创建 upStream 上传流，如果没有这个上传流就无法将代码推送到 github；同时，这个 upStream 只需要在初次推送代码的时候创建，以后就不用创建了,到此执行完毕，查看分支提交状态确认是否提交完整.</p>
-<h3 id="查看是否成功"><a href="#查看是否成功" class="headerlink" title="查看是否成功"></a>查看是否成功</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></tbody></table></figure>
-<p>如果遇到：`Updates were rejected because the remote contains work that you do的问题</p>
-<p>执行git push -u origin master  前</p>
-<p>执行git pull origin master </p>
-<p>如果遇到Updates were rejected because the tip of your current branch is behind即:自己当前版本低于远程仓库版本</p>
-<p>执行 git push -u origin master -f`</p>
-<h2 id="Git创建新分支并提交到github"><a href="#Git创建新分支并提交到github" class="headerlink" title="Git创建新分支并提交到github"></a>Git创建新分支并提交到github</h2><h3 id="可以先查看一下当前所在分支"><a href="#可以先查看一下当前所在分支" class="headerlink" title="可以先查看一下当前所在分支"></a>可以先查看一下当前所在分支</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="创建本地dev分支并切换到新创建的分支"><a href="#创建本地dev分支并切换到新创建的分支" class="headerlink" title="创建本地dev分支并切换到新创建的分支"></a>创建本地dev分支并切换到新创建的分支</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b dev</span><br></pre></td></tr></tbody></table></figure>
-<p>已经创建成功了，可以看一下 <code>git branch</code></p>
-<h3 id="将新创建的分支信息推送到github"><a href="#将新创建的分支信息推送到github" class="headerlink" title="将新创建的分支信息推送到github"></a>将新创建的分支信息推送到github</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin HEAD -u</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><p>如提示错误：可重新 <code>git add .</code></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></tbody></table></figure>
-<p>仅仅只是创建新的分支是不会被计入Contribution的</p>
-</body></html>
+            <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="文章已进行加密，需要密码才能继续阅读." data-whm="无效的密码。请检查并重试.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="deb1815ddb845e4847c76aafc3b2f65af54146f5c9437724da7da9d6efb86ba5">13e6549e48ff14c1cf2807edbbbef0ec1f9f9da2c04dccc0203c8c772437b0aced42f49542350f5c6440bfa1d35460af511ce5ee4afeadbb356f44df11e649ebace199d0168f977c1534633cca637afeeaf2a234b602e8eff49bee4522c512d295828dba2687065a980a140b1da77422ef07cec3b79da079ae538f00dd250c9a9813bdc2b274d9d91b5245702c9e72d4b24ee70377d41543d451a7729e84b52c81deabcb7428dc0ab9c312036b7df02746c714960658927c2591bd9fc93c3f666dec546b70b0d34e59b95555b5b1e9ed9cfef74a317ff6d4170039c2df16b394d11ba894f0919afa3e24b2a300e11f1c1006cd64bb8a6b3aa90518f8d3068b91d4e2287d7e1acc94e35737f0b62e039bdef6eeb76281ae60d29f9ff8566ccadb05352db7498fac0153006e02e7186185c450761a7fd359540cca9933606480728e73fb25125910ffb288147a1afb5815e99438263947d5be2adb898c4042c3d0fe28bf370a24c023db405522bd5f2f689c5efd10dca7c7b8b0be83cb90c6e4ff85c6713d14ca52e9474c46ffc3cd8b92bb1ba522e8f02f367ab6fc03f8ff4ea3436a911fe7c64eff58aea5d646689b540e0fc96d6a2d6930de2f3d327fc6b6416e0cd2c5027d6d44ec55512176fdc514c66ff320fa952d0419ea0c03b1f58077e02a29c08adc4f13b16a2036b747a591037effbf5784aa25f6fc01655470dcc89190d2cb3743fcc87e16bb6ef169803cda4e5c359e1e7e8725827dc5c5408cce786c5669a4d16feb85f65e609b1464ba67b9dbf7e995faaca2280598338144fff981daf4d8258253869258858fd6349c2f300f2230b3f2d743dbfc3f6148db566160f24044debd865fc5906ef3d2e729931a612aa7f7a6aef8246c71a4555c1a5ee397d42c8f3d99a95a440f4f7f2a6df5efd4ac95bd0bb1914a6e2fffa19824c0d52a0a6fecca4043aadf1505fcbfae61f3165be6b347221d4389af0596259035c55d108ca19fba732ef4199c71b5c0c2281dda51def6dc9985cff2e20249f71770033caca4504d355d108fac5cfe92b0c7ea7b02edae8a409f28380433b66dfacdd9aa1d046b66f9beb88e8f570513ec7348feab9d66e20c450d562f652eb88e37eebcf71fa1117b11f87722c6a8a32b023507f4dc8fd4096d8300ebc6e38921f2e210f7d4f8aaf372adf5fee3328a6ae78626579484313a8953c39fd989564e4eb8e0a0de0e5144f891bfbb2017324c27d32d082d1800b8b4f234be592a482c4994cb9e2b98641dd963cacf64169b3678ee13420f34066294121d567d2d6825f06fb2c4ef9bb8e802eb19745334d5512b68eddf9a24ee66d1c4c10c916a948dab63f26d8c92e526a942efea1fa93ef112500b3414647f16258d0a839636a4832c7d70efe029e9ccd2ed41b772e8a66b2ed727894512025c7ab241495c1c44bb3daba43556cf4373573d420862ac6bb783bdec78e62eab95fa098fc72b3d255e338a0f9b4fff400d571ca224c13400c75b8dd8e5faa801ad7d5d8242d465b463d298605d30553081a160829a3c3b6aaa7c3ebacd1807adba047f5da327ae642680ad0952e81102745e754e8e6ee97a20c6f2c7f26aed297abdcf80c8e4b4279c1bedcf78f067364f8a7ef1764ed17a26fb3d65167223fb3bac57987e8ab6a344c44f355f57ecdb510fb1fbfe2726c63741365a763485422e04bb05f4ad8f2fcf78bd49f300e87a5d02093cdb8746affc1ca1bbbf1c458a72f7cc57ea0e434987561a82fab49969cf8efb0b1addd27f0814beeb92ea010326b91391581065029ff0774bd2858e160b0a91ffb15133c1772d265671501b0ae1e0b7db9d68313fb9fce07f7c0ed12bd0d77b8aa3f262125d90c888afa52f5f55e0be27791a368acb3ce5e665a59c49649d226358bf03644c93115f5bdee7a567f039a2810c7be2aecfa57422b666ed884b83dbbe9efd820d8b67757b5704c5da4f84f3696c3da44eb93886584e305fb915ccc027cc4e504f7a4f3eb6124cfb6273fdcff64144af4450085b774f9c583f2253ace228f284ccbcf9e198d273c8694931e557e8396c19adfc05c57e17b8b3b0964a15813bd1057d37ee8df08b3fdecd1559a199904a87155e91b8c4b135e2480a2df624ac33f2acbb400b6efc3c1ff418e2ae1824dfb0c6f9bba2f3ae70fe138697073f3c9523d4375e665641e6de712c8f740a6f59afdb50f0fe07ce464ed29460b28d2d36ac96628986a809f201b94f928c80bbd78b6a9aa5e33a8068e532fadf19ea20580713837dcb0a4785e6573e00de96d3825ed9c37914508c184ad3ad410352dc2588e205fe875e882705fdecbd19097c732206c5a4190c798778ee16b84e4a62f60b2a308be7103eb60cff4a50d5bacee71964e85873b0cc2fe158861b66239f7e10636900005296ae02d3fe799f66a38671f0e1880f9835df704576b04a8ec433d86f8dd751bbcee407f8c48230837d0dd95f54b58ea6f71cbb7e5945ff7d8d5a3d245a65eecd52ab4e6d09889319d390ad32d66d5865cd330e31504036e6924d42b6f2dafcbb2f815f041f920919b337f4f40971eed26733174e9004d475f3644501b2b865a7520ca5d91d6fb543fc7884d9d5a9233694f75c493b4d6aeebe312a748ff7fea44c8912b0766dba221bf0076b6c1d7a93d5aafa147a7fa54f2c478eddec44e2c2b97aa1ee8602cc4ed82e7041bef56949992b7add8d0c89b1c3ea9946bd0ffcd03588c4bf26e0f15b1f3ee601c3ee9262842548862adbdfda68c19892d6e00407e11d9141c8fdb2d0e8a9a9a093f65de622fb91fe41511bf2ad1b77ec9b1d2893e36897aaab4fac1771bd45944bcfd1f6927eae32bf5bd14741c38583824496fb0e27c30b08cb3526eee35786880e0bc01f743bc9882aae1bc29020c0c6fcc112366fed7e555d9632da111dac104577e9b71ee85e426c04f3f25a8009294819048c7eecd45df1b85dd5926bb70e7f9168bfd6ba0854a57f529c75c694bf1255576d8909c3e3bda196e0c89ff80c23f8a4344adedc3df53e1d6caa398596dc5b8f709d4823eafa6b256396d0d27420df12c6ab84ac62b3638e552e6a384ade97719fa32f3beb89e6c7cc8d966cebc68b8f5e0a26b542a2963ea43f0a220eca9440de3f2c1d50fd2706d981fbb64473d051473f2b5aa589ff4fe37dbf058b76172943162f75b252ebfcad2097d48bbed6b497569f002730d6a9e621e1398da7a9324dcf176904e772256c47a796cdb5315bfffd1bc52bbcdbcd978e8b77326388c9e1197995bd151bfb5dc4ec4af181551f419b9ee9196eb1249bd6019d26080f8723fb96941f2e7b9238079d1ea2d70b78fe4567b88800a185d35e7bbb39a28e6d26586640d2353a581bcf345c43996f97b342fe18e31ce9a387bc18c7103520efae4196cc2fb07a6daedb42289fc7cad353569eab50f4cf51d760f2b49e272e53493ceecb4c3d00412170d76f7bac649259de512e59fb7c423add1400adfaf26c22b5edb3f5d983b132cf68d9cc591d6a1067568e6748cf3e54cfff3e5593067cebe2863b13bf1c279d206b12ad4a3f54c227c58047be17c447d118f1092ee40ad05421d02db636d64315d904fb119561b1621b7e5fb5469fccf1e128977fb64d109b5b6511b3b9b87baee17960a4f2b5dc55119c1356e41a1d5bdd5ed8988c629393cc4cb97b9b002acb7d9c329a1227283b33d454eb77a1f4eb68fc5a37b74dafba071fcd6f71183ff371b7edd24ed3505f9ee4b6a24b1d170969ce557862854863f7136d5b4d8f8cb40ca8b979c2ed119fc7d842bc07795edca5066bb9aa22ec941a231dc169b88a11eb99d94cfa353fd90cc5bdbde4a8a793fdd1a61734bb42833353a6de85441399390bb0a2df03b258237d9afa46d58709148b85d7de11245fd2ff56fb7bb79409a123b7a4de9c771c212661d2d1ff16b2c7150b7b43ca9ab434e7502490124cb4d59b80cdd6f29874cd75530aa4e67485dd797d9402e7b68fe20f49af40783173559b2195637d1755f20bf83129166078918cc4f8a99c27c10479012368e8b54dd1c39550c01f741cbeb0dd1361ce68504603a86dc0df0f13db9daf5bd984a8d8d86df51ae74384ab5b0bc18772b673a4c71f4141421d3f0e6d33b434227d2480dfa4ad694924c1fe6e53ff7b267c5cd4148e7bcd1648a052dad501f60f45f49ca5738c609b994723c9e7f9b85c1d41acdbf9ed688c031408bf954783e0a0971e55905dc570d3ac4e26bcacc25bfc42276539375ad8f6407425ed8c92e749ec50ab6c88a369b7330fed665ff7042793adc649e67e72b4c84368339cdebe0ce5fcd9840ad048f2239f44744c91c920c348eadaeaabee5def6fce5182275d846d1316875cafd388619d56b3039773f2975cfc048558cde840de04f60dca21c52cc8ad2250c1764e6d6d8c900424cfa495be3aa499d89e1323570c2ff7ce50045c04b3926619346186443a7a22833be9fc55e16b3f14a1b99ab8d207f9699c6b497afe5b09b13286b84912eaad8b835698b566713c95285fef171ed7a7068eeda4514813d8c025635e3bf065bf4fd651a1fb5a1bcb560b42cdcb71903cd662738ebe0ed69fb1c40b162fae70160770a49fb84e8655b0b2d9fa168734d947366b60152d4f3cf8279ed680ebab42be0fa0a5c313445d9c4ae3c1def6b522529da14f0e7a489851528de392ebba15d9567beead189ccb4c23d060946622699340c6c3218a45a9cb3d11b5abfc6661ac78a5f05c7a8ab9359324cf1db1770dc7cd9e78929c46092aad6a859fd357fa55b2953b3d6b358b38c6c9425322552924f20280f0505a46da365dc3d0959e3107cb96f2b608dfd7c329b6eb93103b54497660879c65dccb98635091deee42f1de527daf9d1a05afb563db8eb522c0f49067aa1fdda517a923a5e665b1139127ce7101041a6a38d71b685e6b4ddcc4b91cf4d351590622f64dcd84b8e4a06418497b648f19371cfb0713e4f4b8282d90ac77f0a6a9eb2bd6114023c43eb3ceef186311f20b4cde1b3b53dd711f4742917e30b3c710fcc8f47d0a6a0d98a3a35671c6b3e8c823fdafa66b996a340259e601b8c22fd5cef463767892a515b919a2317dd332dec87ac6f395c0a55faa85dbe6231d6a0b680e53efcb8792fda70b58cf23fc930352288bd05b2a394800abbba7379660d37831cbbb34f6185e3a5458eaa0293e2d6184f9b584a66148654952d4afdbd31c989056cc3b344ec33486fa7add47d3ef093b3e436d779ab4ea3d25a35c8f0c672b41311c38a646aeb8c8ae7b561acd1fef7701f33d4f21788c4227033f860ab60f35e3c4e72bdacb5b0c58abebd46d43130d2bea67fa8b5152632241ab90d700484c6b13524bfcfbd48ab955924b8a62907dc44b803c71d861478e580d1b5cdbf527eb7805aef62d8d0eea11ef8022f86bc063ddc5563ba3a6870f6c98f2107ab075e1844921e14789bf0744b04d426df56cbc5dfb4e9d1d8e43bff58ff50ba4bbf863eaa518438c16fa42832337945664e4e2f231c51aa77cb223f4d7a3041a8c7bedc2b0b223c6ba21bf86338c121c72e666efbc06f563ffb7e75f07fa6ffd482bdb515149629339ac704b9afec919d15a7b0676dba25bbd2843db376bfac01c3c81b41a4a154a7e765a867b44a240f12c05fecdf75a8fcd8010dfb4c047f5b92668f8de14b76b7075e1c4861753995ec69781254bf36101be97c1f4d498ffff00cbc42bc658426f071b013e0fd00cdc770559ac0599cd08173481b544d84d375c251500b59e1ca66455bc4bebd0908050396c764cd7e1c0d28cef5a93f9c9d875acea8d2966474b965f58bc427f5149c69df257842205f8aa669725f48f1db5ade06a3e4d1a36c327b7782f08208254a584d98d28dd77b946e801590d0cd58c3a51eac39d2fa60dba901287ed8992c6af467c7aca51288bcbe110e35cc9fd3b5c62bb8600e4fe384ed5d94f9a74b10a831f0d5378112af2d1d5ce1b76cc9bab99b196b388c60e1e761136ca86f3c4b357fcc347d7092cfd4dfd5c2866cb67783f8bab05bc71e0e6c7a863462729b2d215173fade448ceac903e6c0a25e9aacf66a2de1298976da0b0c1333ac746fdbafa24eb67bb5bcb308a255ac73a9fb662ae80d51588bac4039600728aa422c26c1ad27d2b16bbc59f64c0e88917eb0dc5acbb35310ebff9775cd8e4bc91384732357f747c46d8153415f4cc6621e0648309b7e5ad3878d965d957f594d9265e420a2535d7b52bce2bae3a04e957b3a701925b9e95fd3a4861c3af0d8d9fbfb9fb84fbc2775522a40cd5f21ecf80d7c5d75886f931956503651b8558b132e56f6386fa5b4fcf9ad86bde4544ecc097eb94ac7ff2ca491f43f1ca37660d5d9ad54d5c34bf094d2b87dae71a4d72cc3cb7d5f92349364e70d025de2f5540848f9e5a7af6d21a2593ca19f27041920d02b63a303a875455cb5c031f4175994a946eb16ecc3235cfa0717046d5b088047f580519ee8fdd6b8cbd493fc65d10a4ed4f2359e5611fce5df01945c25840ae00be44658bf1afc0fe7489a6c8c1c38c6b6fcc60be6fc717085edcbbb9eb9be95b6c7d8a4bbfb7382be14dbde87de0dd69f702ed2a54e93da5278cb7ed35b5b9603cb02b329031de2bd48d510cbc2cb879a0b57630a0efd8475105df753aa4a58daaa86d76a096424a47b80a51fcda256a688ddd6f0fe23d1ae11980cc423eb81b3313614b05e35a9ee255dd0176a3d430b421736f43c94a0e1a4cf3a19c80b64c9fb2465dc32ef834112f803ca26e66459665e68eee48a070b4eb4b4dd0eb6584679a3caed7e88577dcfdc5522a03333e4f7746821e4bfd20a7ddbc3a5b43127804d23178f66227dbced07714780c5334c23d88b547d71fee97f90ab55b48cd719661d48c145230690c00abd011cb5aacfdb8d4a1fab477d6625dd011a16e44f8ddbca18180ba1fabcf0e8403d3f275ee44608037b444530d6eda229d8d975eaa360c4d6a9414d15082e950e1c9b02b29988759582335976d0515af167711a1a4e5cd6b7ac72cfb0064102b892daf868a0a6c9590b8db392c40f5193f60927161df5f494050b75f5628548387d884465ed2a1efb61601dc72e21848784886de0adedb9e8c9bd9d1a54ab1902eb51dd1fd654ff9002ebe7ee928c40b57f2459ad05158bebf256b0c9052265368d55b394504dd7c16cb7dff7b1c2fa74658c07cd637e30ee6380adffab2ba1f297d5368307702a5891d859e7b160418a65332c5a19c4c63525addd5e59df653ccaf6c64c5e8def809c84939eb13e773c10ee946c3f8384977a4605fe4ac448b55ad28a052a96aa3d5fdfa0098e7a8299fc1d2e5d0083f70b17d4e5918b85b9aa4418508fc8b0169a8a1a14235bed3618542b105cbcfb05b9ee4fe51eeccd177d6dabac834d8d4576447be5f765368dc61f5278d87dbb64cd0d453612546437cd72051c14b6ad36199ddfd208e3ee6b453a7e795dbe1dc8072443a03975f55c1b7d950e47916fbfa03c01f6d41caabe5a977505caf912b8e526607042708be2a30d72a370616dbcd90919ff69c32e831ccfe093695d3bf7b2bd5b35eba228a7deeab9d744b57a5b4112401777eb4534af5ff2bd66245b7091898582d5e2833cfbba8241f0ecc90bdeb50e6150e43f96fef96c0c0af4875d93518e5cdae6a12639b9bc9c97c6a9e06223c07a18d4597e4d8e4a9ade3c43b5a22041306080a4f1db75eae17da0a8c8e9eb0e670407619523a468a4fe8b852046039723019cadf73dd0addc36abe93670d080ce2302919febd07529e7cb9efabd73395292ca4a0e0dbc9fe6bd1f8d1515bb408f53f833e9f295e11e3323d70c369b4e6d8f84b38198a7a782eb8832f64b39cd0460152cc9558b3e1189fb475242575605124e68a704841db93f255ca74f66ac6dfae6b4a3a65f2b01f0885138f02417e05f87a313240ff26411a056088028352067666cc24fabcea1660a0fd5242382bc7962784446f2084f0b50f5fe0dd151e16c56d337ebce74565dfb140bb4e5bd789c697929c9b98878c86d11795134ab0c430477ee287c04f559522de3db92e4494953b80e2321c9635d811a4c674bcec52139abee0df2f58331907d3ea6b15e7ea483cc77b88ece17dc8127da43df0baf7107add865f1288382e49b93def4ab5312889367edb5186f62f0644f762da1f8f3894c3936d894662820e4b28df8f69e322c42e1f5c15ca80becbc6c702340443f921c267e66ba69f219285d9b84d504010cda7cec8ae93a2a7e94aaaced60d371c15af01f3c443efafe1432972c8453cf32765643d7e20bb700e22c8cbea3f10a2feb279a303905b93b6a9ec2af1235269c1b6f11d2218a3a7ba498589a565380d0231c53465675bc885230efe9bfca9d27185b57bda52518d105c03598ffbf9a648c7625f315c09859740902f510c33023fba2528c7b4bcc6c0abf82b87709ad2c82045d2b5fac2522e4414e2660b07a920240e32de84aadf2d898b22926c4cc8f27d6d94a826aca9a0c6a320291eb3f6125eb2f0528a1c68696e9c333da61710456fcd43ce56e7dbf11d188df80314807df00d42a5cbca4d4a4001f177c493d6abc8d4172f1c7261263df1218074f276f2b003738911a10401c9270f13086e661de5f9548103a67cd6c4ac40c78b9d5cce6f3100b662741907a5c4309cded567d84014847c53eaaba443b56c89bf973b0209b60f136f9ea171bf12a64356de2c25e64b23b19cf3843739196edb73b9c868ac5187ed8f30f28694c0af212ae37006a8ed859fcd937f3769fb4f11a48d7b43ca42e492a4c1b4b8868513b263788c46ca2b760656097c717b0a600ad613b68ed94fdc6a23194f70e7a4dfcc9fff9bebfcefe7adf6927250fc6370a8ec5ea3f5a14a3fa64968ec24aa0072235521394d794548e168c4d8daa4f006d14f852e88ded782f65765d1b6618a9e6cdc3b94294bd5d0cf67379d2617c09c844bfa5d5fa079ed2a80cd3780e3badf4d1fc0448532e07859fd6293250ff6ab5abfbbd397326cab69e7f0bea80a390b5cb4f40b3986744de1ac46dc1dcf4804aab0c8cc995bbd22afbe012be73f1109e57f327768b382d480026877f9d73dbd02993e0171cca7bd312e6da8a74761fc7263a349e0faf26490cf4c79ded48b1c60f7908e064429013304962e8e236d9c2878218dd3cf76c13f888f923ee1cace15331291c0d2c608b0041bbbddc107ac14bf744c0ec4818ab0e246f51f02b095a7b23e67bc50c990e2e7dc9e6a322de3049eb1a7bdc9ee31cac9b55e6dd8b3241acf7c10681280bed78c72527e5a7bafe50fc404dd35d5030dc42b9e020b967c34ef3b8cd715e1e18fb62dc9975cc3a1788a1674ca7fa63709318652318279792af7028aefe21e1553a73f4a3e1c7d52b92eef14a1cda37197c465531e3a80bebdd0bcdbfa19ee978159f8bca8ebdae442b1b95d6d66f0ea5d3956c7357f23ceb48d7d94f0368cb8e956daab54961074c8b4aeb5dea6ebe0f664463f3d0c0b055a064c11078ed78d7da1764d9904fe08bf2341933dd569df09ab0514742947a00009ecfc56caf82e4b9e4156dbaaf7ad29998b1e41e7b5270b77f81a5efccdcb1f35ff0f4859133147f343566a5028236888c328ed927a767458f44982d5870b9cd51126ca7fc17b03dd4688292210c8fcbdb4fce3f94ca8ddc174e056342f9a2ddadfc862cf17f567c7d67d58b12a3d4c726bb3850218e49d28b32eca8acbcf94a14612ac79886f46ac9a6107a0e767872b2734fbb1973dad9dc1a2e4a40667a140e60e75ba67aafffdc3a3bbad95f039e83b360c0ca620048db5a1941e306355f7ce0c8480ea61bb89fb55fa11151eceb6b4c0f4c5cf5be36974862f476af92dbe4ac1c0ed311a7ed3bee658781bd0d85d30012bc9a5024c13b1bbbcb2c445488e9133b862ad74724cefdca118fcf97a7629d24d830dbb0e81e39b4026354c52014384a5dd9a652386cb80737a543d3a42bec7da563b123f07e74baef7ba03247a755a4f6866d641edea0346ae7e8afb49cc2979ee977c95218e610677dde0f2dff04b29a5d7cc917ab06e1edcfa1efbc9a736011e344f223a4608b89570d89702b33d2586bad4aa24f5c5b97cce4249447b8de3b0f5641393d0cdad827a9a4be2a69054b7ff04572034ba48ccd97968d51e207e3478a7e5bb4b7acd945d130d7902a6d05c73287ad2bf9f7f71299134d90d0fa7a4b38b1b80a499bedbb491a44825a6b35b6febe31fee4286ef191bea10d4a41cfb0045974e34cc3e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">请输入访问密码.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -426,7 +411,7 @@ var _hmt = _hmt || [];
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        36
+                        35
                     </p>
                 </div>
             </div>
@@ -446,7 +431,7 @@ var _hmt = _hmt || [];
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        28
+                        27
                     </p>
                 </div>
             </div>
@@ -511,59 +496,7 @@ var _hmt = _hmt || [];
             <h3 class="menu-label">
                 目录
             </h3>
-            <ul class="menu-list"><li>
-        <a class="is-flex" href="#github配置推送">
-        <span class="has-mr-6">1</span>
-        <span>github配置推送</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#初始化本地仓库">
-        <span class="has-mr-6">1.1</span>
-        <span>初始化本地仓库</span>
-        </a></li><li>
-        <a class="is-flex" href="#添加所有文件">
-        <span class="has-mr-6">1.2</span>
-        <span>添加所有文件</span>
-        </a></li><li>
-        <a class="is-flex" href="#git-commit-m-‘提交说明’-git-commit-m-quot-提交说明-quot-或者git-commit-m-39-提交说明2-39-将修改后的文件提交到本地仓库，如：git-commit-m-‘项目创建’">
-        <span class="has-mr-6">1.3</span>
-        <span>git commit -m ‘提交说明’ (git commit -m "提交说明"或者git commit -m'提交说明2') 将修改后的文件提交到本地仓库，如：git commit -m ‘项目创建’</span>
-        </a></li><li>
-        <a class="is-flex" href="#连接到远程仓库">
-        <span class="has-mr-6">1.4</span>
-        <span>连接到远程仓库</span>
-        </a></li><li>
-        <a class="is-flex" href="#把本地仓库的变化连接到远程仓库主分支">
-        <span class="has-mr-6">1.5</span>
-        <span>把本地仓库的变化连接到远程仓库主分支</span>
-        </a></li><li>
-        <a class="is-flex" href="#创建一个-upStream-（上传流），并将本地代码通过这个-upStream-推送到-别名为-origin-的仓库中的-master-分支上">
-        <span class="has-mr-6">1.6</span>
-        <span>创建一个 upStream （上传流），并将本地代码通过这个 upStream 推送到 别名为 origin 的仓库中的 master 分支上</span>
-        </a></li><li>
-        <a class="is-flex" href="#查看是否成功">
-        <span class="has-mr-6">1.7</span>
-        <span>查看是否成功</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#Git创建新分支并提交到github">
-        <span class="has-mr-6">2</span>
-        <span>Git创建新分支并提交到github</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#可以先查看一下当前所在分支">
-        <span class="has-mr-6">2.1</span>
-        <span>可以先查看一下当前所在分支</span>
-        </a></li><li>
-        <a class="is-flex" href="#创建本地dev分支并切换到新创建的分支">
-        <span class="has-mr-6">2.2</span>
-        <span>创建本地dev分支并切换到新创建的分支</span>
-        </a></li><li>
-        <a class="is-flex" href="#将新创建的分支信息推送到github">
-        <span class="has-mr-6">2.3</span>
-        <span>将新创建的分支信息推送到github</span>
-        </a></li><li>
-        <a class="is-flex" href="#切换分支">
-        <span class="has-mr-6">2.4</span>
-        <span>切换分支</span>
-        </a></li></ul></li></ul>
+            
         </div>
     </div>
 </div>
@@ -881,7 +814,7 @@ var _hmt = _hmt || [];
                 <span class="level-item">v2ray</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">1</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/v2ray/xray/">
@@ -983,7 +916,7 @@ var _hmt = _hmt || [];
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/Brook/" style="font-size: 10px;">Brook</a> <a href="/tags/H2C/" style="font-size: 10px;">H2C</a> <a href="/tags/Linux/" style="font-size: 12px;">Linux</a> <a href="/tags/SS/" style="font-size: 10px;">SS</a> <a href="/tags/SSR/" style="font-size: 10px;">SSR</a> <a href="/tags/VIP/" style="font-size: 10px;">VIP</a> <a href="/tags/VLESS/" style="font-size: 10px;">VLESS</a> <a href="/tags/brook/" style="font-size: 10px;">brook</a> <a href="/tags/github/" style="font-size: 14px;">github</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/tor/" style="font-size: 10px;">tor</a> <a href="/tags/v2ray/" style="font-size: 20px;">v2ray</a> <a href="/tags/vip/" style="font-size: 14px;">vip</a> <a href="/tags/vless/" style="font-size: 16px;">vless</a> <a href="/tags/xray/" style="font-size: 10px;">xray</a> <a href="/tags/xtls/" style="font-size: 12px;">xtls</a> <a href="/tags/%E4%B8%AD%E8%BD%AC/" style="font-size: 10px;">中转</a> <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 10px;">大数据</a> <a href="/tags/%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/" style="font-size: 10px;">定时重启</a> <a href="/tags/%E6%9A%97%E7%BD%91/" style="font-size: 10px;">暗网</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 10px;">服务器</a> <a href="/tags/%E6%B4%8B%E8%91%B1/" style="font-size: 10px;">洋葱</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a> <a href="/tags/%E7%BF%BB%E5%A2%99/" style="font-size: 18px;">翻墙</a> <a href="/tags/%E9%80%9A%E7%9F%A5/" style="font-size: 10px;">通知</a> <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 10px;">防火墙</a>
+        <a href="/tags/Brook/" style="font-size: 10px;">Brook</a> <a href="/tags/H2C/" style="font-size: 10px;">H2C</a> <a href="/tags/Linux/" style="font-size: 12px;">Linux</a> <a href="/tags/SS/" style="font-size: 10px;">SS</a> <a href="/tags/SSR/" style="font-size: 10px;">SSR</a> <a href="/tags/VIP/" style="font-size: 10px;">VIP</a> <a href="/tags/VLESS/" style="font-size: 10px;">VLESS</a> <a href="/tags/brook/" style="font-size: 10px;">brook</a> <a href="/tags/github/" style="font-size: 14px;">github</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/tor/" style="font-size: 10px;">tor</a> <a href="/tags/v2ray/" style="font-size: 20px;">v2ray</a> <a href="/tags/vip/" style="font-size: 14px;">vip</a> <a href="/tags/vless/" style="font-size: 16px;">vless</a> <a href="/tags/xray/" style="font-size: 10px;">xray</a> <a href="/tags/xtls/" style="font-size: 12px;">xtls</a> <a href="/tags/%E4%B8%AD%E8%BD%AC/" style="font-size: 10px;">中转</a> <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 10px;">大数据</a> <a href="/tags/%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/" style="font-size: 10px;">定时重启</a> <a href="/tags/%E6%9A%97%E7%BD%91/" style="font-size: 10px;">暗网</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 10px;">服务器</a> <a href="/tags/%E6%B4%8B%E8%91%B1/" style="font-size: 10px;">洋葱</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a> <a href="/tags/%E7%BF%BB%E5%A2%99/" style="font-size: 18px;">翻墙</a> <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 10px;">防火墙</a>
     </div>
 </div>
 
@@ -1049,7 +982,7 @@ var _hmt = _hmt || [];
                     <span class="level-item">九月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>

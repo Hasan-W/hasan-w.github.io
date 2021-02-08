@@ -250,11 +250,17 @@ var _hmt = _hmt || [];
             
         </h1>
         <div class="content">
-            <html><head></head><body><p>本文提供主流json配置代码请VIP会员仔细研究使用实战</p>
-<h3 id="打开GitHub收藏订阅"><a href="#打开GitHub收藏订阅" class="headerlink" title="打开GitHub收藏订阅"></a>打开GitHub收藏订阅</h3><p>我会定期更新优化好的代码，涵盖了主流FQ配置config.json,感兴趣的朋友也可以一起提交新的配置文件<br><a target="_blank" rel="noopener" href="https://github.com/ComeBey/v2rayconfig">github项目地址</a> </p>
-</body></html>
+            无权限访问，仅提供VIP会员阅读.
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2021/02/05/VIP%E4%BC%9A%E5%91%98JSON%E9%85%8D%E7%BD%AE%E8%B6%85%E9%9B%86%E6%94%B6%E5%BD%95/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -362,80 +368,17 @@ var _hmt = _hmt || [];
             
         </h1>
         <div class="content">
-            <html><head></head><body><a id="more"></a>
-
-<p><a target="_blank" rel="noopener" href="https://www.hostbuf.com/t/988.html">Finalshell SSH连接工具下载</a><br><a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/download-home-edition.html">Mobaxterm SSH连接工具下载</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.v2fly.org/">v2fly官方网站</a></p>
-<!--more-->
-
-<p>博主搭建环境：1.谷歌云centos7 64系统 2.域名一个</p>
-<p>目前仅 caddy2 的 v2.2.0-rc.1 版及以后完美支持 v2ray 的 H2C,实现 H2(HTTP/2)应用。</p>
-<h3 id="caddy安装"><a href="#caddy安装" class="headerlink" title="caddy安装"></a>caddy安装</h3><h4 id="centos7"><a href="#centos7" class="headerlink" title="centos7"></a>centos7</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install yum-plugin-copr</span><br><span class="line">yum copr enable @caddy/caddy</span><br><span class="line">yum install caddy</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="centos8"><a href="#centos8" class="headerlink" title="centos8"></a>centos8</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dnf install 'dnf-command(copr)'</span><br><span class="line">dnf copr enable @caddy/caddy</span><br><span class="line">dnf install caddy</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="Debian"><a href="#Debian" class="headerlink" title="Debian"></a>Debian</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zypper addrepo 'https://copr.fedorainfracloud.org/coprs/g/caddy/caddy/repo/opensuse-tumbleweed/group_caddy-caddy-opensuse-tumbleweed.repo'</span><br><span class="line">zypper refresh</span><br><span class="line">zypper install --allow-vendor-change caddy</span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zypper addrepo 'https://copr.fedorainfracloud.org/coprs/g/caddy/caddy/repo/opensuse-tumbleweed/group_caddy-caddy-opensuse-tumbleweed.repo'</span><br><span class="line">zypper refresh</span><br><span class="line">zypper install --allow-vendor-change caddy</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -OL "https://github.com/caddyserver/caddy/releases/latest/download/ASSET"</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="wget"><a href="#wget" class="headerlink" title="wget"></a>wget</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget "https://github.com/caddyserver/caddy/releases/latest/download/ASSET"</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull caddy</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install caddy</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="openSUSE-Leap-15-1"><a href="#openSUSE-Leap-15-1" class="headerlink" title="openSUSE Leap 15.1"></a>openSUSE Leap 15.1</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">zypper addrepo 'https://copr.fedorainfracloud.org/coprs/g/caddy/caddy/repo/opensuse-leap-15.1/group_caddy-caddy-opensuse-leap-15.1.repo'</span><br><span class="line">zypper refresh</span><br><span class="line">zypper install --allow-vendor-change caddy</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<h4 id="openSUSE-Leap-15-2"><a href="#openSUSE-Leap-15-2" class="headerlink" title="openSUSE Leap 15.2"></a>openSUSE Leap 15.2</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zypper addrepo 'https://copr.fedorainfracloud.org/coprs/g/caddy/caddy/repo/opensuse-leap-15.1/group_caddy-caddy-opensuse-leap-15.2.repo'</span><br><span class="line">zypper refresh</span><br><span class="line">zypper install --allow-vendor-change caddy</span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="openSUSE-Tumbleweed"><a href="#openSUSE-Tumbleweed" class="headerlink" title="openSUSE Tumbleweed"></a>openSUSE Tumbleweed</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zypper addrepo 'https://copr.fedorainfracloud.org/coprs/g/caddy/caddy/repo/opensuse-tumbleweed/group_caddy-caddy-opensuse-tumbleweed.repo'</span><br><span class="line">zypper refresh</span><br><span class="line">zypper install --allow-vendor-change caddy</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caddy version</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="取消"><a href="#取消" class="headerlink" title="取消"></a>取消</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl unmask --now caddy</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><p>Caddy服务器和你站点的主目录/var/www/comebey.com创建主目录/var/www</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /var/www/comebey.com</span><br><span class="line">sudo chown -R caddy:caddy /var/www</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="创建ssl目录"><a href="#创建ssl目录" class="headerlink" title="创建ssl目录"></a>创建ssl目录</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /etc/ssl/caddy</span><br><span class="line">sudo chown -R caddy:root /etc/ssl/caddy</span><br><span class="line">sudo chmod 0770 /etc/ssl/caddy</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><p>指定证书和证书存放绝对路径地址，可以自定义。如<code>/etc/v2ray</code>下放置密钥和证书</p>
-<h3 id="生成证书"><a href="#生成证书" class="headerlink" title="生成证书"></a>生成证书</h3><p><strong>如果你已经有其他证书可忽略，把证书和密钥放到服务器指定目录下。申请证书方法太多可通过安装acme.sh工具生成证书或其他方法生成证书，可Google搜索。</strong></p>
-<p><strong>1.安装acem.sh证书生成工具，以下提供3种方法安装，选其中任意一种方法安装证书工具 (温馨提示：自动升级acme.sh在root下输入 acme.sh upgrade)</strong></p>
-<figure class="highlight bash hljs"><figcaption><span>/root/.acme.sh</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">curl  https://get.acme.sh | sh   // 如提示安装失败 请先安装curl 输入 yum -y install curl</span><br><span class="line"></span><br><span class="line">wget -O -  https://get.acme.sh | sh     //如提示安装失败请（先安装wget）输入 yum -y install wget 已经安装了忽略</span><br><span class="line"></span><br><span class="line">git <span class="hljs-built_in">clone</span> https://github.com/acmesh-official/acme.sh.git   // 如提示安装失败 先安装git 已经安装了的忽略 输入 yum install git</span><br><span class="line"><span class="hljs-built_in">cd</span> ./acme.sh</span><br><span class="line">./acme.sh --install</span><br></pre></td></tr></tbody></table></figure>
-<p>通过以上代码安装acme.sh提示<code>红色</code>抱错 你可以按实际相关情况而定安装依赖 比如安装socat 或者 netcat</p>
-<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">centos7  yum install socat     <span class="hljs-comment">#通过80端口生成证书的依赖</span></span><br><span class="line">centos7  yum isntall netcat</span><br><span class="line">       </span><br><span class="line">debian  apt-get install openssl cron socat curl</span><br><span class="line">debian  apt-get -y install netcat</span><br><span class="line">       </span><br><span class="line">安装成功后执行 <span class="hljs-built_in">source</span> ~/.bashrc   <span class="hljs-comment">#以确保脚本所设置的命令别名生效</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-<p><strong>2.生成证书 路径为/root/.acme.sh文件下 安装好后可自行查看</strong><br><strong>温馨提示：通过acme.sh生成证书有多种方法：</strong><br>例如—自动DNS API集成 如：cloudflare DNS API 令牌 和 使用全局API密钥 acme.sh支持大多数dns生成证书<br>例如—使用DNS手动模式，等多种其他安装方法，如果你是个好学的人可Google </p>
-<p>生成证书如下：本期视频只用指定端口 生成证书 <strong>推荐使用443端口生成证书</strong> （一般用单域名足以，毕竟是翻墙用无需搞那么多花里胡哨的多域，比如：主域baidu.com那么不建议使用 <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 因为是翻墙的前端web请自定义比如tw.baidu.com,前缀tw可以自定义请不要写太长，主域baidu.com和二级 <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 可以备用你懂的 ）</p>
-<p><strong>通过侦听80端口申请证书，如果80端口被占用,请使用443端口,请确保这些端口都打开了</strong></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ~/.acme.sh/acme.sh --issue -d 域名 --standalone -k ec-256  </span><br></pre></td></tr></tbody></table></figure>
-<p><strong>如果您80在反向代理或负载均衡器后面使用非标准端口，则可以–httpport用来指定端口</strong></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ~/.acme.sh/acme.sh --issue -d 域名 --standalone --httpport 端口</span><br></pre></td></tr></tbody></table></figure>
-<p><strong>侦听443端口以颁发证书，请确保443端口开启</strong></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ~/.acme.sh/acme.sh --issue -d 域名 --alpn -k ec-256 </span><br></pre></td></tr></tbody></table></figure>
-
-<p><strong>如果您443在反向代理或负载均衡器后面使用非标准端口，则可以–tlsport用来指定端口</strong></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ~/.acme.sh/acme.sh --issue -d 域名 --alpn --tlsport 端口 </span><br></pre></td></tr></tbody></table></figure>
-<p><strong>-k表示密钥长度，后面的值可以是 ec-256 、ec-384、2048、3072、4096、8192，带有 ec 表示生成的是 ECC 证书，没有则是 RSA 证书。在安全性上 256 位的 ECC 证书等同于 3072 位的 RSA 证书</strong></p>
-<p>温馨提示：如何80或者443端口被占用导致我们无法申请密钥和证书，我们可以通过kill封杀端口在重新申请。</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">netstat -tlnp|grep 80</span><br><span class="line">或者</span><br><span class="line">netstat -tlnp|grep 443</span><br><span class="line">然后</span><br><span class="line">kill 1103（这个1103是进程端口id）</span><br><span class="line"></span><br><span class="line">如果终止不了，可以强制终止</span><br><span class="line">kill -9 1103</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="证书和密钥到指定路径"><a href="#证书和密钥到指定路径" class="headerlink" title="证书和密钥到指定路径"></a>证书和密钥到指定路径</h3><figure class="highlight hljs"><figcaption><span>/etc/v2ray</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ecc 迁移 sudo ~/.acme.sh/acme.sh --installcert -d 域名 --fullchainpath /etc/ssl/caddy/v2ray.crt --keypath /etc/ssl/caddy/v2ray.key --ecc</span><br><span class="line"></span><br><span class="line">rsa 迁移 sudo ~/.acme.sh/acme.sh --installcert -d 域名 --fullchainpath /etc/ssl/caddy/v2ray.crt --keypath /etc/ssl/caddy/v2ray.key</span><br></pre></td></tr></tbody></table></figure>
-<p>將 /etc/v2ray/v2ray.key（路径可自定义） 修改為 644 权限</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 644 /etc/v2ray/v2ray.key</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="配置Caddyfile"><a href="#配置Caddyfile" class="headerlink" title="配置Caddyfile"></a>配置Caddyfile</h3><figure class="highlight plain hljs"><figcaption><span>/etc/caddy/Caddyfile</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/caddy/Caddyfile</span><br><span class="line"></span><br><span class="line">www.!@##.com {</span><br><span class="line">    root */var/www/www.!@!@.com/html</span><br><span class="line">    #other</span><br><span class="line">    reverse_proxy /path 127.0.0.1:123456 {</span><br><span class="line">        transport http {</span><br><span class="line">            versions h2c</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="caddy调试"><a href="#caddy调试" class="headerlink" title="caddy调试"></a>caddy调试</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl enable caddy</span><br><span class="line">sudo systemctl start caddy</span><br><span class="line">systemctl status caddy</span><br><span class="line">journalctl -u caddy</span><br><span class="line">sudo systemctl reload caddy</span><br><span class="line">sudo systemctl stop caddy</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="安裝和更新V2Ray"><a href="#安裝和更新V2Ray" class="headerlink" title="安裝和更新V2Ray"></a>安裝和更新V2Ray</h3><figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="安装geoip和geosite"><a href="#安装geoip和geosite" class="headerlink" title="安装geoip和geosite"></a>安装geoip和geosite</h3><figure class="highlight hljs"><figcaption><span>install update geoip.dat and geosite.date</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-dat-release.sh)</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h3><figure class="highlight hljs"><figcaption><span>卸载v2ray</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="创建和编辑配置文件"><a href="#创建和编辑配置文件" class="headerlink" title="创建和编辑配置文件"></a>创建和编辑配置文件</h3><figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/usr/<span class="hljs-built_in">local</span>/etc/v2ray  <span class="hljs-comment">#Finalshell 或者Mobaxterm 使用</span></span><br><span class="line">vim /usr/<span class="hljs-built_in">local</span>/etc/v2ray</span><br><span class="line">vi /usr/<span class="hljs-built_in">local</span>/etc/v2ray</span><br><span class="line">nano /usr/<span class="hljs-built_in">local</span>/etc/v2ray</span><br></pre></td></tr></tbody></table></figure>
-<p>在/usr/local/etc/v2ray下面创建或编辑config.json配置文件<br>复制以下代码到config.json</p>
-<figure class="highlight json hljs"><figcaption><span>/usr/local/etc/v2ray/config.json</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  <span class="hljs-attr">"log"</span>: {</span><br><span class="line">    <span class="hljs-attr">"loglevel"</span>: <span class="hljs-string">"warning"</span></span><br><span class="line">  },</span><br><span class="line">  <span class="hljs-attr">"inbounds"</span>: [</span><br><span class="line">    {</span><br><span class="line">      <span class="hljs-attr">"port"</span>: ###,</span><br><span class="line">      <span class="hljs-attr">"listen"</span>: <span class="hljs-string">"127.0.0.1"</span>,</span><br><span class="line">      <span class="hljs-attr">"protocol"</span>: <span class="hljs-string">"vless"</span>,</span><br><span class="line">      <span class="hljs-attr">"settings"</span>: {</span><br><span class="line">        <span class="hljs-attr">"clients"</span>: [</span><br><span class="line">          {</span><br><span class="line">            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"####"</span>,</span><br><span class="line">            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"###"</span></span><br><span class="line">          }</span><br><span class="line">        ],</span><br><span class="line">        <span class="hljs-attr">"decryption"</span>: <span class="hljs-string">"none"</span></span><br><span class="line">      },</span><br><span class="line">      <span class="hljs-attr">"streamSettings"</span>: {</span><br><span class="line">        <span class="hljs-attr">"security"</span>: <span class="hljs-string">"none"</span>,</span><br><span class="line">        <span class="hljs-attr">"network"</span>: <span class="hljs-string">"h2"</span>,</span><br><span class="line">        <span class="hljs-attr">"httpSettings"</span>: {</span><br><span class="line">          <span class="hljs-attr">"path"</span>: <span class="hljs-string">"/###"</span>,</span><br><span class="line">          <span class="hljs-attr">"host"</span>: [</span><br><span class="line">            <span class="hljs-string">"www.@@@@.com"</span></span><br><span class="line">          ]</span><br><span class="line">        }</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  ],</span><br><span class="line">  <span class="hljs-attr">"outbounds"</span>: [</span><br><span class="line">    {</span><br><span class="line">      <span class="hljs-attr">"tag"</span>: <span class="hljs-string">"direct"</span>,</span><br><span class="line">      <span class="hljs-attr">"protocol"</span>: <span class="hljs-string">"freedom"</span>,</span><br><span class="line">      <span class="hljs-attr">"settings"</span>: {}</span><br><span class="line">    },</span><br><span class="line">    {</span><br><span class="line">      <span class="hljs-attr">"tag"</span>: <span class="hljs-string">"blocked"</span>,</span><br><span class="line">      <span class="hljs-attr">"protocol"</span>: <span class="hljs-string">"blackhole"</span>,</span><br><span class="line">      <span class="hljs-attr">"settings"</span>: {}</span><br><span class="line">    }</span><br><span class="line">  ],</span><br><span class="line">  <span class="hljs-attr">"routing"</span>: {</span><br><span class="line">    <span class="hljs-attr">"domainStrategy"</span>: <span class="hljs-string">"AsIs"</span>,</span><br><span class="line">    <span class="hljs-attr">"rules"</span>: [</span><br><span class="line">      {</span><br><span class="line">        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"field"</span>,</span><br><span class="line">        <span class="hljs-attr">"ip"</span>: [</span><br><span class="line">          <span class="hljs-string">"geoip:private"</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="hljs-attr">"outboundTag"</span>: <span class="hljs-string">"blocked"</span></span><br><span class="line">      }</span><br><span class="line">    ]</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<p>v2ray调试</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start v2ray.service</span><br><span class="line">sudo systemctl restart v2ray</span><br><span class="line">sudo systemctl status -l v2ray</span><br><span class="line">sudo systemctl daemon-reload</span><br></pre></td></tr></tbody></table></figure>
-<p>设置v2ray开机启动</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable v2ray</span><br></pre></td></tr></tbody></table></figure>
-
-
-<h3 id="BBr安装"><a href="#BBr安装" class="headerlink" title="BBr安装"></a>BBr安装</h3><figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget <span class="hljs-string">"https://raw.githubusercontent.com/ComeBey/rootfw-bbr/master/tcp.sh"</span> && chmod +x tcp.sh && ./tcp.sh</span><br></pre></td></tr></tbody></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://t.me/RootInstitute">添加电报群</a></p>
-</body></html>
+            无权限访问，需要密码才能继续阅读.
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/11/07/VLESS-H2C-Caddy2%E9%85%8D%E7%BD%AE/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -483,8 +426,7 @@ var _hmt = _hmt || [];
             
         </h1>
         <div class="content">
-            <html><head></head><body><p>这里是进阶配置的超集，利用 VLESS 强大的回落分流特性，实现了 443 端口尽可能多的协议、配置的完美共存，包括 XTLS客户端可以同时通过下列方式连接到服务器，其中 WS 都可以通过 CDN.在这里感谢v2fly团队<a target="_blank" rel="noopener" href="https://www.v2fly.org/">v2fly官方网站</a></p>
-<p>1.VLESS over TCP with XTLS<br>2.VLESS over TCP with TLS<br>3.VLESS over WS with TLS<br>4.VMess over TCP with TLS<br>5.VMess over WS with TLS<br>重要提示：请把v2ray N和v2ray core更新到最新版本，新版本v2rayN已经支持VLESS Xtls Trojan直接添加<br><a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases">v2ray N最新下载</a><br><a target="_blank" rel="noopener" href="https://github.com/v2fly/v2ray-core/releases">v2ray core最新下载</a><br><a target="_blank" rel="noopener" href="https://www.hostbuf.com/t/988.html">Finalshell SSH连接工具下载</a><br><a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/download-home-edition.html">Mobaxterm SSH连接工具下载</a></p></body></html>
+            仅提供VIP学员阅读.
         </div>
         
         
@@ -940,7 +882,7 @@ var _hmt = _hmt || [];
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        36
+                        35
                     </p>
                 </div>
             </div>
@@ -960,7 +902,7 @@ var _hmt = _hmt || [];
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        28
+                        27
                     </p>
                 </div>
             </div>
@@ -1226,7 +1168,7 @@ var _hmt = _hmt || [];
                 <span class="level-item">v2ray</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">1</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/v2ray/xray/">
@@ -1328,7 +1270,7 @@ var _hmt = _hmt || [];
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/Brook/" style="font-size: 10px;">Brook</a> <a href="/tags/H2C/" style="font-size: 10px;">H2C</a> <a href="/tags/Linux/" style="font-size: 12px;">Linux</a> <a href="/tags/SS/" style="font-size: 10px;">SS</a> <a href="/tags/SSR/" style="font-size: 10px;">SSR</a> <a href="/tags/VIP/" style="font-size: 10px;">VIP</a> <a href="/tags/VLESS/" style="font-size: 10px;">VLESS</a> <a href="/tags/brook/" style="font-size: 10px;">brook</a> <a href="/tags/github/" style="font-size: 14px;">github</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/tor/" style="font-size: 10px;">tor</a> <a href="/tags/v2ray/" style="font-size: 20px;">v2ray</a> <a href="/tags/vip/" style="font-size: 14px;">vip</a> <a href="/tags/vless/" style="font-size: 16px;">vless</a> <a href="/tags/xray/" style="font-size: 10px;">xray</a> <a href="/tags/xtls/" style="font-size: 12px;">xtls</a> <a href="/tags/%E4%B8%AD%E8%BD%AC/" style="font-size: 10px;">中转</a> <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 10px;">大数据</a> <a href="/tags/%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/" style="font-size: 10px;">定时重启</a> <a href="/tags/%E6%9A%97%E7%BD%91/" style="font-size: 10px;">暗网</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 10px;">服务器</a> <a href="/tags/%E6%B4%8B%E8%91%B1/" style="font-size: 10px;">洋葱</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a> <a href="/tags/%E7%BF%BB%E5%A2%99/" style="font-size: 18px;">翻墙</a> <a href="/tags/%E9%80%9A%E7%9F%A5/" style="font-size: 10px;">通知</a> <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 10px;">防火墙</a>
+        <a href="/tags/Brook/" style="font-size: 10px;">Brook</a> <a href="/tags/H2C/" style="font-size: 10px;">H2C</a> <a href="/tags/Linux/" style="font-size: 12px;">Linux</a> <a href="/tags/SS/" style="font-size: 10px;">SS</a> <a href="/tags/SSR/" style="font-size: 10px;">SSR</a> <a href="/tags/VIP/" style="font-size: 10px;">VIP</a> <a href="/tags/VLESS/" style="font-size: 10px;">VLESS</a> <a href="/tags/brook/" style="font-size: 10px;">brook</a> <a href="/tags/github/" style="font-size: 14px;">github</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/tor/" style="font-size: 10px;">tor</a> <a href="/tags/v2ray/" style="font-size: 20px;">v2ray</a> <a href="/tags/vip/" style="font-size: 14px;">vip</a> <a href="/tags/vless/" style="font-size: 16px;">vless</a> <a href="/tags/xray/" style="font-size: 10px;">xray</a> <a href="/tags/xtls/" style="font-size: 12px;">xtls</a> <a href="/tags/%E4%B8%AD%E8%BD%AC/" style="font-size: 10px;">中转</a> <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 10px;">大数据</a> <a href="/tags/%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF/" style="font-size: 10px;">定时重启</a> <a href="/tags/%E6%9A%97%E7%BD%91/" style="font-size: 10px;">暗网</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 10px;">服务器</a> <a href="/tags/%E6%B4%8B%E8%91%B1/" style="font-size: 10px;">洋葱</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 10px;">科学上网</a> <a href="/tags/%E7%BF%BB%E5%A2%99/" style="font-size: 18px;">翻墙</a> <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 10px;">防火墙</a>
     </div>
 </div>
 
@@ -1500,7 +1442,7 @@ var _hmt = _hmt || [];
                     <span class="level-item">九月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -1719,7 +1661,7 @@ var _hmt = _hmt || [];
                     <span class="level-item">九月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -1949,13 +1891,6 @@ var _hmt = _hmt || [];
                     <a class="tags has-addons" href="/tags/%E7%BF%BB%E5%A2%99/">
                         <span class="tag">翻墙</span>
                         <span class="tag is-grey">6</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%E9%80%9A%E7%9F%A5/">
-                        <span class="tag">通知</span>
-                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
